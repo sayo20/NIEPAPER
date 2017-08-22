@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.light.niepaper">
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/transpbook"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/transpbook"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".Activities.Authentication.activity_splashscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activities.MainActivity" />
+        <activity android:name=".Activities.Authentication.LoginActivity" />
+        <activity android:name=".Activities.Authentication.RegisterActivity" />
+        <activity
+            android:name=".Activities.Authentication.profileActivity"
+            android:label="@string/appname" />
+        <activity
+            android:name=".Activities.Notepad.makeNote"
+            android:label="@string/title_activity_make_note"
+            android:parentActivityName=".Activities.Authentication.profileActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.light.niepaper.Activities.Authentication.profileActivity" />
+        </activity>
+        <activity
+            android:name=".Activities.Notepad.textPad"
+            android:label="@string/title_activity_text_pad"
+            android:parentActivityName=".Activities.Notepad.makeNote"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".Activities.makebook"
+            android:label="@string/title_activity_makebook"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".Activities.Chat.GroupName" />
+        <activity android:name=".Activities.Chat.ChatRoom" />
+        <activity
+            android:name=".Activities.Notepad.SketchRoom"
+            android:label="@string/title_activity_sketch_room"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".Activities.Notepad.AudioRecorder"
+            android:label="@string/title_activity_audio_recorder"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".Activities.Scheduler.Schedules"
+            android:label="@string/title_activity_schedules"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".Activities.Scheduler.Scheduler"
+            android:label="@string/title_activity_scheduler"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+    </application>
+
+</manifest>

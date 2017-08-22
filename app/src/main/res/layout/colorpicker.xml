@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/paintcolors">
+    <ImageButton
+        android:layout_width="@dimen/large_brush"
+        android:layout_height="@dimen/large_brush"
+        android:layout_margin="2dp"
+        android:background="#FF660000"
+        android:onClick="paintClicked"
+        android:src="@drawable/paint"
+        android:tag="#FF660000" />
+
+    <ImageButton
+        android:layout_width="@dimen/large_brush"
+        android:layout_height="@dimen/large_brush"
+        android:layout_margin="2dp"
+        android:background="#FFFF0000"
+        android:onClick="paintClicked"
+        android:src="@drawable/paint"
+        android:tag="#FFFF0000" />
+
+    <ImageButton
+        android:layout_width="@dimen/large_brush"
+        android:layout_height="@dimen/large_brush"
+        android:layout_margin="2dp"
+        android:background="#FFFF6600"
+        android:onClick="paintClicked"
+        android:src="@drawable/paint"
+        android:tag="#FFFF6600" />
+
+    <ImageButton
+        android:layout_width="@dimen/large_brush"
+        android:layout_height="@dimen/large_brush"
+        android:layout_margin="2dp"
+        android:background="#FFFFCC00"
+        android:onClick="paintClicked"
+        android:src="@drawable/paint"
+        android:tag="#FFFFCC00" />
+
+    <ImageButton
+        android:layout_width="@dimen/large_brush"
+        android:layout_height="@dimen/large_brush"
+        android:layout_margin="2dp"
+        android:background="#FF009900"
+        android:onClick="paintClicked"
+        android:src="@drawable/paint"
+        android:tag="#FF009900" />
+
+    <ImageButton
+        android:layout_width="@dimen/large_brush"
+        android:layout_height="@dimen/large_brush"
+        android:layout_margin="2dp"
+        android:background="#FF009999"
+        android:onClick="paintClicked"
+        android:src="@drawable/paint"
+        android:tag="#FF009999" />
+</LinearLayout>

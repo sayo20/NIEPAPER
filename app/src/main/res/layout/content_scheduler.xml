@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fab = "http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/layout_scheduler"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:scrollbars="vertical"
+    tools:context="com.light.niepaper.Activities.Scheduler.Scheduler"
+    tools:showIn="@layout/activity_scheduler">
+
+    <LinearLayout
+        android:id="@+id/listschedulelayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_below="@+id/edit_sched_titles"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/edit_sched_titles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:hint="@string/enter_titlesh"
+            android:maxLines="1"
+            android:padding="@dimen/margin_padding_tiny"
+            android:textColor="#000000"
+            android:textSize="@dimen/text_size_large" />
+    <ListView
+        android:id="@+id/listViewscheduler"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/edit_sched_titles"
+        android:layout_weight="1">
+
+    </ListView>
+        <LinearLayout
+            android:id="@+id/text_nd_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/listViewscheduler"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/schedmessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fabscheduler"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:src="@android:drawable/ic_menu_send"
+                fab:fab_addButtonColorNormal="@color/colorAccent"
+                fab:fab_addButtonColorPressed="@color/colorPrimaryDark"
+                fab:fab_addButtonPlusIconColor="@color/textandeditview"
+                fab:fab_addButtonStrokeVisible="false" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout_makenote"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.light.niepaper.Activities.Notepad.makeNote"
+    tools:showIn="@layout/activity_make_note">
+
+    <ListView
+        android:id="@+id/listViewa"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+    </ListView>
+
+    <!--<ImageView-->
+        <!--android:id="@+id/album_overflow"-->
+        <!--android:layout_width="34dp"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:layout_gravity="top|right"-->
+        <!--android:padding="0dp"-->
+        <!--android:scaleType="center"-->
+        <!--android:src="@drawable/icon_overflow" />-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="bottom">
+
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white_overlay">
+
+        <com.getbase.floatingactionbutton.FloatingActionsMenu
+            android:id="@+id/fab_menunotes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            fab:fab_addButtonColorNormal="@color/colorAccent"
+            fab:fab_addButtonColorPressed="@color/colorPrimaryDark"
+            fab:fab_addButtonPlusIconColor="@color/textandeditview"
+            fab:fab_addButtonStrokeVisible="false"
+            fab:fab_labelStyle="@style/menu_labels_style"
+            fab:fab_labelsPosition="left">
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_note"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fab:fab_colorNormal="@color/colorAccent"
+                fab:fab_colorPressed="@color/colorPrimaryDark"
+                fab:fab_icon="@drawable/book"
+                fab:fab_plusIconColor="@color/textandeditview"
+                fab:fab_size="mini"
+                fab:fab_title="New Note" />
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_sketch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onSketch"
+                fab:fab_colorNormal="@color/colorAccent"
+                fab:fab_colorPressed="@color/colorPrimaryDark"
+                fab:fab_icon="@drawable/pencil"
+                fab:fab_plusIconColor="@color/textandeditview"
+                fab:fab_size="mini"
+                fab:fab_title="Sketch" />
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_audio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fab:fab_colorNormal="@color/colorAccent"
+                fab:fab_colorPressed="@color/colorPrimaryDark"
+                fab:fab_icon="@drawable/mic"
+                fab:fab_plusIconColor="@color/textandeditview"
+                fab:fab_size="mini"
+                fab:fab_title="Audio" />
+
+        </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+    </FrameLayout>
+</LinearLayout>
+
+</LinearLayout>
